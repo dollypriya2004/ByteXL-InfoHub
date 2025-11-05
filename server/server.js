@@ -6,11 +6,11 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
-// Weather API endpoint - Using REAL OpenWeatherMap API
+
 app.get('/api/weather', async (req, res) => {
   try {
     const { city = 'Hyderabad' } = req.query;
@@ -49,7 +49,6 @@ app.get('/api/weather', async (req, res) => {
   }
 });
 
-// Currency Conversion API endpoint - Using REAL ExchangeRate-API
 app.get('/api/currency', async (req, res) => {
   try {
     const { amount = 100 } = req.query;
@@ -135,7 +134,7 @@ app.get('/api/quote', async (req, res) => {
   }
 });
 
-// Health check endpoint
+
 app.get('/api/health', (req, res) => {
   res.json({ 
     status: 'OK', 
@@ -149,7 +148,7 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Root endpoint
+
 app.get('/', (req, res) => {
   res.json({
     message: 'Welcome to ByteXL InfoHub Backend',
