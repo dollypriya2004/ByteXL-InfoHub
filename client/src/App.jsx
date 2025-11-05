@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import WeatherModule from './components/WeatherModule';
-import CurrencyConverter from './components/CurrencyConverter';
+import WeatherModule from './components/WeatherModule.jsx';
+import CurrencyConverter from './components/CurrencyConverter.jsx';
 import QuoteGenerator from './components/QuoteGenerator.jsx';
 import './App.css';
 
