@@ -6,6 +6,7 @@ const CurrencyConverter = () => {
   const [conversion, setConversion] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const API_BASE_URL = 'https://bytexl-infohub.onrender.com';
 
   useEffect(() => {
     convertCurrency();
@@ -20,7 +21,7 @@ const CurrencyConverter = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await axios.get(`/api/currency?amount=${amount}`);
+      const response = await axios.get(`${API_BASE_URL}/api/currency?amount=${amount}`);
       setConversion(response.data);
     } catch (err) {
       setError('Failed to convert currency. Please check if the server is running.');
