@@ -58,6 +58,7 @@ Live App: https://byte-xl-info-hub-wtgj.vercel.app/
 Backend API: https://bytexl-infohub.onrender.com
 
 📁 Project Structure
+
 text
 ByteXL-InfoHub/
 ├── client/                 # React frontend
@@ -70,6 +71,7 @@ ByteXL-InfoHub/
 │   ├── server.js           # Express server with API routes
 │   └── package.json
 └── vercel.json            # Deployment configuration
+
 🚀 Getting Started
 If you want to run this locally:
 
@@ -79,14 +81,21 @@ git clone https://github.com/dollypriya2004/ByteXL-InfoHub.git
 
 # Frontend setup
 cd client
+
 npm install
+
 npm run dev
+
 
 # Backend setup (in another terminal)
 cd server  
+
 npm install
+
 npm run dev
+
 💡 Challenges & Learnings
+
 This project taught me so much about:
 
 Full-stack development workflow
@@ -102,10 +111,7 @@ React state management across multiple components
 📞 Connect with Me
 I'm always excited to discuss tech, projects, or potential opportunities! Feel free to reach out:
 
-Email: [Your Email]
-
-LinkedIn: [Your LinkedIn Profile]
-
+Email: dollypriya2004@gmail.com
 GitHub: https://github.com/dollypriya2004
 
 Built with ❤️ by Dollypriya Kallivettu
