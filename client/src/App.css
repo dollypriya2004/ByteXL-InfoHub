@@ -80,7 +80,7 @@ body {
   flex: 1;
 }
 
-/* Clean Version - Working Styles */
+
 .module-container.weather-module {
   background: linear-gradient(180deg, #69dfea 0%, #3b75ae 100%);
   border-radius: 20px;
@@ -459,4 +459,4 @@ body {
     font-size: 1.2rem;
   }
 }
-/* TEMPORARY DEBUG - Add this at the VERY END of your CSS */
+
