@@ -6,7 +6,7 @@ const QuoteGenerator = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
- 
+  const API_BASE_URL = 'https://bytexl-infohub.onrender.com';
 
   useEffect(() => {
     fetchQuote();
@@ -16,7 +16,7 @@ const QuoteGenerator = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await axios.get('/api/quote');
+      const response = await axios.get(`${API_BASE_URL}/api/quote`);
       setQuote(response.data);
     } catch (err) {
       setError('Failed to fetch motivational quote. Please check if the server is running.');
