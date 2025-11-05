@@ -5,7 +5,7 @@ const WeatherModule = () => {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
+  const API_BASE_URL = 'https://bytexl-infohub.onrender.com';
  
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const WeatherModule = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await axios.get('/api/weather');
+      const response = await axios.get(`${API_BASE_URL}/api/weather`);
       setWeather(response.data);
     } catch (err) {
       setError('Failed to fetch weather data. Please check if the server is running.');
